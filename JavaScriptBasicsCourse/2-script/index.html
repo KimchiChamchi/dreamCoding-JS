@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- parsing HTML을 멈추고 > main.js를 받아오고 > 실행하고 > parsing HTML을 이어함 -->
+    <script src="main.js"></script>
+
+    <!-- parsing HTML과 fetching js를 병렬로 진행하고
+         > parsing HTML을 멈추고 fetching된 main.js를 실행하고
+         > parsing HTML을 이어함
+        * 여러개의 script태그의 순서에 상관없이 
+          먼저 fetching이 끝난 js를 먼저 실행함                              -->
+    <!-- <script async src="main.js"></script> -->
+
+    <!-- parsing HTML과 fetching js를 병렬로 진행하고
+         > fetching js가 먼저 끝나도 parsing HTML이 끝날때까지 기다림
+         > main.js를 실행
+        * 여러개의 script태그를 순서에 맞게 실행해줌                              -->
+    <!-- <script defer src="main.js"></script> -->
+  </head>
+  <body>
+    <div></div>
+    <!-- parsing HTML이 끝나면 fetching js
+         > main.js 실행                    -->
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
