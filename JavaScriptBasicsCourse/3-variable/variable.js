@@ -3,7 +3,7 @@
 // use this for Vanilla
 "use strict";
 
-// 2. Variable
+// 2. Variable, rw(read/write)
 // let (added in ES6)
 
 // Global scope
@@ -30,7 +30,15 @@ console.log(age);
 }
 console.log(age);
 
-// 3. Constants
+// 3. Constant, r(read only)
+// use const whenever possible.
+// 가능하면 const를 사용하십시오.
+// only use let if variable needs to change.
+// 변수가 변경되어야 하는 경우에만 let을 사용합니다.
+// Immutable data types: premitive types, frozen objects (i.e. object.freeze())
+// 불변 데이터 유형: 기본 유형, 고정 객체(i.n. object.freeze())
+// Mutable data types: all objects by default are mutable in JS
+// 변경 가능한 데이터 유형: 기본적으로 모든 객체는 JS에서 변경 가능합니다.
 // favor immutable data type always for a few reasons:
 // 다음과 같은 이유로 항상 불변 데이터 유형을 선호합니다
 //  - security (보안)
